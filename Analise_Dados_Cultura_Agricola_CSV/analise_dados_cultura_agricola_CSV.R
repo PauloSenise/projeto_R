@@ -13,5 +13,5 @@ media <- mean(dados$Área, na.rm = TRUE)
 desvio_padrao <- sd(dados$Área, na.rm = TRUE)
 
 # Exibir os resultados
-cat("Média:", media, "\n")
-cat("Desvio Padrão:", desvio_padrao, "\n\n")
+cat("Média da Área Plantada:", media, "\n")
+cat("Desvio Padrão da Média:", desvio_padrao, "\n\n")
