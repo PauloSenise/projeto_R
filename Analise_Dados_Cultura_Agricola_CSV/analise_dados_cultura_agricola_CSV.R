@@ -1,7 +1,17 @@
+library(readr)
+
 # Ler o Arquivo CSV no R
 # Carregar os Dados
 dados <- read.csv("dados_fazenda.csv", stringsAsFactors = FALSE)
 
-# Ver as primeiras linhas do dataset
+# Exibir as primeiras linhas dos dados para verificar
 head(dados)
 
+# Calcular a média e o desvio padrão de uma coluna específica
+# Substitua 'coluna_nome' pelo nome real da coluna
+media <- mean(dados$Área, na.rm = TRUE)
+desvio_padrao <- sd(dados$Área, na.rm = TRUE)
+
+# Exibir os resultados
+cat("Média:", media, "\n")
+cat("Desvio Padrão:", desvio_padrao, "\n")
