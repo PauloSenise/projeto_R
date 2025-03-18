@@ -14,4 +14,4 @@ desvio_padrao <- sd(dados$Área, na.rm = TRUE)
 
 # Exibir os resultados
 cat("Média:", media, "\n")
-cat("Desvio Padrão:", desvio_padrao, "\n")
+cat("Desvio Padrão:", desvio_padrao, "\n\n")
